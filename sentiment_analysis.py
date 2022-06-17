@@ -16,6 +16,8 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, LSTM, Dropout
+from tensorflow.keras.layers import Bidirectional,Embedding
+from tensorflow.keras.utils import plot_model
 from tensorflow.keras import Input
 
 from sklearn.metrics import classification_report,confusion_matrix
@@ -111,7 +113,7 @@ x_test = np.expand_dims(x_test,axis=-1)
 
 #%% Model development
 
-from tensorflow.keras.layers import Bidirectional,Embedding
+
 
 embedding_dim = 64 
 
@@ -134,7 +136,7 @@ model.compile(loss='categorical_crossentropy',optimizer='adam',
 hist = model.fit(x_train,y_train,validation_data=(x_test,y_test),epochs=10,
           batch_size=128)
 
-
+plot_model(model,show_layer_names=(True),show_shapes=(True))
 #%%  Plot Visualisation
 
 hist.history.keys()
