@@ -8,9 +8,11 @@
 
 
 # Sentiment-Analysis LSTM using Embedding Technique
- Description : Trained with over 60,000 IMDB dataset to categorized positive and negative review
- Algorithm : Deep Learning method->> LSTM, Long Short Term Memory 
- Preprocessing step : TOKENIZER, PADDING, ONE HOT ENCODER
+Description : Trained with over 60,000 IMDB dataset to categorized positive and negative review
+
+Algorithm : Deep Learning method->> LSTM, Long Short Term Memory 
+
+Preprocessing step : TOKENIZER, PADDING, ONE HOT ENCODER
 
 
 
