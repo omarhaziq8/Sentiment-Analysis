@@ -113,8 +113,6 @@ x_test = np.expand_dims(x_test,axis=-1)
 
 #%% Model development
 
-
-
 embedding_dim = 64 
 
 model = Sequential()
